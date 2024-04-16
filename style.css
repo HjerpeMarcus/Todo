@@ -1,0 +1,129 @@
+*, html {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  padding: 1.5rem 1rem 1rem 1rem;
+}
+@media (min-width: 700px) {
+  .container {
+    border: solid 2px rgb(209, 209, 209);
+    border-radius: 1rem;
+    margin: auto;
+    max-width: 700px;
+  }
+}
+.container #blankError {
+  text-align: center;
+  background-color: rgb(221, 77, 77);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.container h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  background-color: rgb(57, 137, 190);
+  color: white;
+  border-radius: 8px;
+}
+.container .inputContainer {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.container .inputContainer #inputText {
+  border: solid 2px rgb(209, 209, 209);
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+  flex: 0 0 80%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+@media (min-width: 500px) {
+  .container .inputContainer #inputText {
+    flex: 0 0 85%;
+  }
+}
+.container .inputContainer #inputButton {
+  padding: 0.5rem;
+  flex: 0 0 20%;
+  font-size: 2rem;
+  background-color: rgb(57, 137, 190);
+  border-radius: 0 8px 8px 0;
+  border: solid 2px rgb(16, 104, 163);
+  border-left: none;
+  color: white;
+}
+@media (min-width: 500px) {
+  .container .inputContainer #inputButton {
+    flex: 0 0 15%;
+  }
+}
+.container #enterTask {
+  color: rgb(182, 182, 182);
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+}
+.container #taskList {
+  list-style: none;
+  padding-left: 0;
+}
+.container #taskList .task {
+  display: flex;
+  justify-content: space-between;
+}
+.container #taskList .task .taskText {
+  display: inline-block;
+  flex: 0 0 80%;
+  padding: 0.5rem;
+  border-left: rgb(209, 209, 209) 2px solid;
+  border-bottom: rgb(209, 209, 209) 2px solid;
+  font-size: 14px;
+}
+@media (min-width: 500px) {
+  .container #taskList .task .taskText {
+    flex: 0 0 85%;
+  }
+}
+.container #taskList .task .deleteTask {
+  flex: 0 0 20%;
+  background-color: rgb(221, 77, 77);
+  border-right: solid 2px rgb(196, 17, 17);
+  border-bottom: solid 2px rgb(196, 17, 17);
+  color: white;
+}
+@media (min-width: 500px) {
+  .container #taskList .task .deleteTask {
+    flex: 0 0 15%;
+  }
+}
+.container #taskList .task .deleteTask .material-icons {
+  pointer-events: none;
+}
+.container #taskList .task:first-child .taskText {
+  border-radius: 8px 0 0 0;
+  border-top: rgb(209, 209, 209) 2px solid;
+}
+.container #taskList .task:first-child .deleteTask {
+  border-radius: 0 8px 0 0;
+  border-top: solid 2px rgb(196, 17, 17);
+}
+.container #taskList .task:last-child .taskText {
+  border-bottom-left-radius: 8px;
+}
+.container #taskList .task:last-child .deleteTask {
+  border-bottom-right-radius: 8px;
+}
+.container .hidden {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

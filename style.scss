@@ -1,0 +1,121 @@
+*,html{
+    border:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    padding:1.5rem 1rem 1rem 1rem;
+    @media(min-width:700px){
+        border:solid 2px rgb(209, 209, 209);
+        border-radius:1rem;
+        margin:auto;
+        max-width:700px;
+    }
+    #blankError{
+        text-align:center;
+        background-color:rgb(221, 77, 77);
+        color:white;
+        padding: 0.5rem;
+        border-radius:8px;
+        margin-bottom:1rem;
+    }
+    h1{
+        text-align:center;
+        margin-bottom:1rem;
+        background-color: rgb(57, 137, 190);
+        color:white;
+        border-radius:8px;
+    }
+    .inputContainer{
+        display:flex;
+        margin-bottom:1rem;
+        #inputText{
+            border:solid 2px rgb(209, 209, 209);
+            border-right:none;
+            border-radius:8px 0 0 8px;
+            flex: 0 0 80%;
+            padding: 0.5rem;
+            font-size:1rem;
+            font-family:'Poppins', sans-serif;
+            font-weight:500;
+            @media(min-width:500px){
+                flex: 0 0 85%;
+            }
+        }
+        #inputButton{
+            padding:0.5rem;
+            flex: 0 0 20%;
+            font-size:2rem;
+            background-color:rgb(57, 137, 190);
+            border-radius:0 8px 8px 0;
+            border:solid 2px rgb(16, 104, 163);
+            border-left:none;
+            color:white;
+            @media(min-width:500px){
+                flex: 0 0 15%;
+            }
+        }
+    }
+    #enterTask{
+        color:rgb(182, 182, 182);
+        font-size:1.5rem;
+        font-style:italic;
+        text-align:center;
+    }
+    #taskList{
+        list-style:none;
+        padding-left:0;
+        .task{
+            display:flex;
+            justify-content:space-between;
+            .taskText{
+                display:inline-block;
+                flex: 0 0 80%;
+                padding: 0.5rem;
+                border-left: rgb(209, 209, 209) 2px solid;
+                border-bottom:rgb(209, 209, 209) 2px solid;
+                font-size:14px;
+                @media(min-width:500px){
+                    flex: 0 0 85%;
+                }
+            }
+            .deleteTask{
+                flex: 0 0 20%;
+                background-color:rgb(221, 77, 77);
+                border-right: solid 2px rgb(196, 17, 17);
+                border-bottom: solid 2px rgb(196, 17, 17);
+                color:white;
+                @media(min-width:500px){
+                    flex: 0 0 15%;
+                }
+                .material-icons{
+                    pointer-events:none;
+                }
+            }
+        }
+        .task:first-child{
+            .taskText{
+                border-radius: 8px 0 0 0;
+                border-top: rgb(209, 209, 209) 2px solid;
+            }
+            .deleteTask{
+                border-radius: 0 8px 0 0;
+                border-top: solid 2px rgb(196, 17, 17);
+            }
+        }
+        .task:last-child{
+            .taskText{
+                border-bottom-left-radius: 8px;
+            }
+            .deleteTask{
+                border-bottom-right-radius: 8px;
+            }
+        }
+    }
+    .hidden{
+        display:none;
+    }
+}
